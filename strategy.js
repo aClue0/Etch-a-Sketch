@@ -23,7 +23,7 @@ chooseGridButtons.forEach((button) => {
     // while n is a number so the strict comparison fails so I may turn n to a string or dataset to number
     if (String(n) === ev.target.dataset.n) return;
 
-    n = ev.target.dataset.n;
+    n = Number(ev.target.dataset.n);
     resetGrid();
     makeGrid(n);
   });

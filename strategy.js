@@ -61,7 +61,7 @@ function createColorButton(color, section = coloringButtonsSection) {
   button.dataset.color = color;
   button.classList.add("colorBtn");
   handleColorButtonClick(button);
-  coloringButtonsSection.appendChild(button);
+  section.appendChild(button);
 }
 // TODO:
 // make a for loop to generate colorbtns

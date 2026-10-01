@@ -36,9 +36,6 @@ function makeGrid(n) {
     for (let j = 0; j < n; j++) {
       let pixel = document.createElement("div");
       pixel.classList.add("pixel");
-      pixel.addEventListener("click", (ev) => {
-        ev.target.style.backgroundColor = colorToDraw;
-      });
       row.appendChild(pixel);
     }
     canvas.appendChild(row);
@@ -46,6 +43,19 @@ function makeGrid(n) {
 }
 // Call makeGrid to initialize grid on the canvas with 16x16 grid
 makeGrid(n);
+
+// TODO: learn event delegation and use it to optimize the event handling
+canvas.addEventListener("mouseover", (ev) => {
+  // if the clicked element is the pixel inside the canvas and is clicked
+  // with the left mouse button
+  if (ev.target.matches(".pixel") && ev.buttons === 1) {
+    ev.target.style.backgroundColor = colorToDraw;
+  }
+});
+canvas.addEventListener("mousedown", (ev) => {
+  ev.preventDefault();
+  ev.target.style.backgroundColor = colorToDraw;
+});
 
 // TODO: make a function that takes a color and generates a button in a specified section
 // but the default section is the colorBtnsSection

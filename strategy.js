@@ -1,13 +1,14 @@
 // TODO: select the required elements
-
+const canvas = document.querySelector("#canvas");
 // TODO:
 // make the divs and add the class "pixel" to them
 const pixel = document.createElement("div");
 pixel.classList = "pixel";
+pixel.style.backgroundColor = "black";
 
 // TODO:
 // add divs in a for loop in the canvas for nxn
-//
+
 // TODO:
 // make the logic to choose a color
 // make a global variabe color

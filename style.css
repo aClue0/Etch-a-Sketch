@@ -25,7 +25,16 @@ sketch-container {
 }
 /* TODO: make the divs take all the space with flex 1 whatever n is */
 /* make them appear as a grid nxn */
-
+#sketch-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 50px;
+  border: 2px solid brown;
+  justify-content: center;
+  height: 800px;
+  width: auto;
+  background-color: white;
+}
 .pixel {
   display: flex;
   flex: 1;

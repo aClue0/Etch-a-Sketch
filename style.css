@@ -27,25 +27,30 @@ sketch-container {
 /* make them appear as a grid nxn */
 #sketch-container {
   display: flex;
-  align-items: center;
-  margin: 0px 50px;
-  border: 2px solid brown;
-  justify-content: center;
-  height: 800px;
+  flex: 1;
+  flex-direction: column;
   width: auto;
-  background-color: white;
+  margin: 0px 100px;
 }
 .pixel {
   display: flex;
   flex: 1;
 }
 #canvas {
+  display: flex;
+  flex: 9;
+  border: 2px solid brown;
+  background-color: white;
 }
 #colorSection {
+  display: flex;
+  flex: 1;
+  background-color: black;
 }
 footer {
+  margin-top: 30px;
+  padding: 15px 0;
   background-color: #f7c477;
-  height: 2rem;
   color: brown;
   font-weight: 900;
   display: flex;

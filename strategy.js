@@ -18,7 +18,10 @@ let n = 16;
 const chooseGridButtons = Array.from(document.querySelectorAll(".changeGrid"));
 chooseGridButtons.forEach((button) => {
   button.addEventListener("click", (ev) => {
-    n = ev.target.dataset.n;
+    if (n === ev.target.dataset.n) return;
+    else {
+      n === ev.target.dataset.n;
+    }
     resetGrid();
     handleGrid(n);
   });

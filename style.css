@@ -32,12 +32,20 @@ body {
   margin: 0px 100px;
 }
 /* CANVAS SECTION */
+.row {
+  display: flex;
+  flex: 1;
+}
 .pixel {
   display: flex;
   flex: 1;
 }
+.pixel:hover {
+	background-color: blue;
+}
 #canvas {
   display: flex;
+	flex-direction: column;
   flex: 9;
   border: 2px solid brown;
   background-color: white;

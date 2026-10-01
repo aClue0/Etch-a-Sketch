@@ -1,7 +1,8 @@
 // TODO: select the required elements
-const canvas = document.querySelector("#canvas");
+const canvas = document.getElementById("canvas");
 const coloringButtonsSection = document.getElementById("colorBtnsSection");
 const coloringButtons = Array.from(document.querySelectorAll(".colorBtn"));
+
 // TODO:
 // make the divs and add the class "pixel" to them
 const pixel = document.createElement("div");
@@ -9,7 +10,18 @@ pixel.classList = "pixel";
 pixel.style.backgroundColor = "black";
 
 // TODO:
-// add divs in a for loop in the canvas for nxn
+// add divs in a for loop FEATURE: add n in the loop and canvas for nxn
+let n = 16;
+for (let i = 0; i < n; i++) {
+  let row = document.createElement("div");
+  row.classList.add("row");
+  for (let j = 0; j < n; j++) {
+    let pixel = document.createElement("div");
+    pixel.classList.add("pixel");
+    row.appendChild(pixel);
+  }
+  canvas.appendChild(row);
+}
 
 // TODO:
 // make the logic to choose a color

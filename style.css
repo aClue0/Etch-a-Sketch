@@ -1,3 +1,4 @@
+/* GLOBAL SETTINGS */
 * {
   margin: 0;
   padding: 0;
@@ -15,16 +16,14 @@ body {
   justify-content: space-between;
   font-family: monospace, "Courier New";
 }
+/* TITLE */
 .title {
   text-align: center;
   margin: 20px 0;
 }
-sketch-container {
-  display: flex;
-  flex: 1;
-}
 /* TODO: make the divs take all the space with flex 1 whatever n is */
 /* make them appear as a grid nxn */
+
 #sketch-container {
   display: flex;
   flex: 1;
@@ -32,6 +31,7 @@ sketch-container {
   width: auto;
   margin: 0px 100px;
 }
+/* CANVAS SECTION */
 .pixel {
   display: flex;
   flex: 1;
@@ -42,11 +42,37 @@ sketch-container {
   border: 2px solid brown;
   background-color: white;
 }
+
+/* COLORING SECTION */
 #colorSection {
   display: flex;
   flex: 1;
-  background-color: black;
+  background-color: bisque;
 }
+.colorBtn {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+  min-height: 50px;
+	min-width: 10px;
+}
+#colorBtnsSection {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+#settingsSection {
+  display: flex;
+  flex: 1;
+	background-color: black;
+}
+#randomizeSection {
+  display: flex;
+  flex: 1;
+	background-color: white;
+}
+/* FOOTER */
 footer {
   margin-top: 30px;
   padding: 15px 0;
@@ -56,4 +82,4 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+

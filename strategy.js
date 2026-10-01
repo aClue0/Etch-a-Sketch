@@ -27,11 +27,11 @@ chooseGridButtons.forEach((button) => {
       n = ev.target.dataset.n;
     }
     resetGrid();
-    handleGrid(n);
+    makeGrid(n);
   });
 });
 
-function handleGrid(n) {
+function makeGrid(n) {
   for (let i = 0; i < n; i++) {
     let row = document.createElement("div");
     row.classList.add("row");
@@ -46,8 +46,8 @@ function handleGrid(n) {
     canvas.appendChild(row);
   }
 }
-// Call handleGrid to initialize grid on the canvas with 16x16 grid
-handleGrid(n);
+// Call makeGrid to initialize grid on the canvas with 16x16 grid
+makeGrid(n);
 
 // TODO: make a function that takes a color and generates a button in a specified section
 // but the default section is the colorBtnsSection

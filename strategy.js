@@ -21,7 +21,6 @@ chooseGridButtons.forEach((button) => {
     // I noticed that n === ev.target.dataset.n (false) doesn't equal n == ev.target.dataset.n (true)
     // and that is because ev.target.dataset.n returns a string "16" and not a number
     // while n is a number so the strict comparison fails so I may turn n to a string or dataset to number
-    console.log(String(n) === ev.target.dataset.n);
     if (String(n) === ev.target.dataset.n) return;
 
     n = ev.target.dataset.n;
@@ -53,7 +52,6 @@ makeGrid(n);
 function handleColorButtonClick(button) {
   button.addEventListener("click", (ev) => {
     colorToDraw = ev.target.dataset.color;
-    console.log(colorToDraw);
   });
 }
 let colorToDraw = "black";

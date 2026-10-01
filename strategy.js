@@ -11,6 +11,11 @@ function resetGrid() {
     canvas.removeChild(canvas.firstElementChild);
   }
 }
+const resetBtn = document.querySelector(".resetBtn");
+resetBtn.addEventListener("click", () => {
+  resetGrid();
+  makeGrid(n);
+});
 
 // TODO:
 // add divs in a for loop FEATURE: add n in the loop and canvas for nxn

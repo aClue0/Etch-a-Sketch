@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-
+![Image of the website](img/snapshot.png)
 A browser-based Etch-a-Sketch project built with **HTML, CSS, and JavaScript** as part of [The Odin Project](https://www.theodinproject.com/) Foundations course.
 
 ## Live Demo
@@ -15,6 +15,7 @@ A browser-based Etch-a-Sketch project built with **HTML, CSS, and JavaScript** a
   * 16×16
   * 32×32
   * 64×64
+  * 128x128
 * Existing grids are removed and regenerated when changing the grid size.
 * Hover over the grid to create a drawing trail.
 * Choose from multiple drawing colors:
@@ -54,8 +55,10 @@ The color buttons are also generated dynamically from a JavaScript array. Each b
 Etch-a-Sketch/
 ├── index.html
 ├── style.css
+|-- img/ 
 ├── strategy.js
 └── README.md
+
 ```
 
 ## What I Practiced

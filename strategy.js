@@ -1,7 +1,6 @@
 // TODO: select the required elements
 const canvas = document.getElementById("canvas");
 const coloringButtonsSection = document.getElementById("colorBtnsSection");
-const coloringButtons = Array.from(document.querySelectorAll(".colorBtn"));
 
 // TODO:
 // make the divs and add the class "pixel" to them
@@ -23,17 +22,21 @@ for (let i = 0; i < n; i++) {
   canvas.appendChild(row);
 }
 
-// TODO:
-// make the logic to choose a color
-let colorToDraw = "";
-
 // TODO: make a function that takes a color and generates a button in a specified section
 // but the default section is the colorBtnsSection
+function handleButtonClick(button) {
+  button.addEventListener("click", (ev) => {
+    colorToDraw = ev.target.dataset.color;
+    console.log(colorToDraw);
+  });
+}
+let colorToDraw = "";
 function createColorButton(color, section = coloringButtonsSection) {
   let button = document.createElement("button");
   button.style.backgroundColor = color;
-  button.classList.add("colorBtn");
   button.dataset.color = color;
+  button.classList.add("colorBtn");
+  handleButtonClick(button);
   coloringButtonsSection.appendChild(button);
 }
 // TODO:

@@ -17,6 +17,9 @@ for (let i = 0; i < n; i++) {
   for (let j = 0; j < n; j++) {
     let pixel = document.createElement("div");
     pixel.classList.add("pixel");
+    pixel.addEventListener("click", (ev) => {
+      ev.target.style.backgroundColor = colorToDraw;
+    });
     row.appendChild(pixel);
   }
   canvas.appendChild(row);
@@ -58,7 +61,6 @@ const colors = [
 for (const color of colors) {
   createColorButton(color);
 }
+
 // TODO:
-// give each color btn an event listener that listens for
-// a click and assigns color to the global variable
-// for each colorbtn give them a color and assign it to the global variable
+// make the logic to choose a color

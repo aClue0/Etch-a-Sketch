@@ -23,6 +23,13 @@ sketch-container {
   display: flex;
   flex: 1;
 }
+/* TODO: make the divs take all the space with flex 1 whatever n is */
+/* make them appear as a grid nxn */
+
+.pixel {
+  display: flex;
+  flex: 1;
+}
 #canvas {
 }
 #colorSection {

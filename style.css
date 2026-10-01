@@ -55,7 +55,9 @@ body {
 #colorSection {
   display: flex;
   flex: 1;
-  background-color: bisque;
+  background-color: lightyellow;
+	border: 2px solid black;
+	border-top: none;
 }
 .colorBtn {
   display: flex;

@@ -61,6 +61,9 @@ const colors = [
 for (const color of colors) {
   createColorButton(color);
 }
-
 // TODO:
-// make the logic to choose a color
+// 1. Make an undo button
+// 2. Make a rainbow button
+// 3. Make an rgb selector
+// 4. Make a remove/clear canvas button
+// 5. Make nxn grid buttons
